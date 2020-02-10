@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/iconhd" />
+
+
+    <ImageView
+        android:id="@+id/iv_email"
+        android:layout_width="45dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/iconbg_rounded"
+        android:padding="3dp"
+        android:src="@drawable/email_dark"
+        android:tint="@color/colorWhite"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_txt"
+        android:layout_width="match_parent"
+
+        android:layout_height="55dp"
+        android:layout_toRightOf="@id/iv_email"
+        android:layout_marginTop="185dp"
+        android:hint="Email"
+        android:padding="0dp"
+        app:passwordToggleEnabled="true"
+
+        android:drawableLeft="@drawable/email_dark"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="0dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_pass"
+        android:layout_width="45dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/iv_email"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/iconbg_rounded"
+        android:padding="3dp"
+        android:src="@drawable/pass_dark"
+        android:tint="@color/colorWhite" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+
+        android:layout_height="55dp"
+        android:layout_toRightOf="@id/iv_pass"
+        android:layout_marginTop="250dp"
+        android:hint="Password"
+        android:padding="0dp"
+        app:passwordToggleEnabled="true"
+
+        android:drawableLeft="@drawable/email_dark"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:paddingLeft="0dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_rounded"
+        android:padding="10dp"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tv_forgotpass"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        android:text="Forgot password? "
+        android:textColor="@color/colorLightGrey"
+        android:textSize="15sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_nw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/tv_forgotpass"
+        android:text="New user? "
+        android:textColor="@color/colorLightGrey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_newUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/tv_nw"
+        android:text="SIGN UP"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

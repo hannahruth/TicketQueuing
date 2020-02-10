@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TQ</string>
+    <string name="icon_person">"@drawable/email_dark"</string>
+</resources>
